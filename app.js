@@ -8,14 +8,14 @@ const Notify = imports.gi.Notify;
 const Pango = imports.gi.Pango;
 const Lang = imports.lang;
 
-const APP_NAME = "Fedy";
+const APP_NAME = "Debi";
 
 const Application = new Lang.Class({
     Name: APP_NAME,
 
     _init: function() {
         this.application = new Gtk.Application({
-            application_id: "org.ozonos.fedy",
+            application_id: "co.uk.xpd259",
             flags: Gio.ApplicationFlags.FLAGS_NONE
         });
 

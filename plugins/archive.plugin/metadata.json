@@ -11,7 +11,7 @@
 		},
 		"undo": {
 			"label": "Remove",
-			"command": "run-as-root dnf -y cabextract lzip p7zip p7zip-rar unrar"
+			"command": "run-as-root aptitude remove -y cabextract lzip p7zip p7zip-rar unrar"
 		},
 		"status": { "command": "dpkg-query  -l cabextract lzip p7zip p7zip-rar unrar" }
 	}
