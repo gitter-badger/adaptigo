@@ -1,0 +1,18 @@
+{
+	"icon": "file-roller",
+	"label": "Archive formats",
+	"description": "Utilized by file-roller to extract or compress different formats.",
+	"license": [ "GPLv2", "GPLv3", "LGPLv2" ],
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root aptitude -y install cabextract lzip p7zip p7zip-rar unrar"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root dnf -y cabextract lzip p7zip p7zip-rar unrar"
+		},
+		"status": { "command": "dpkg-query  -l cabextract lzip p7zip p7zip-rar unrar" }
+	}
+}
