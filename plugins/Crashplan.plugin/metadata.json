@@ -1,0 +1,18 @@
+{
+	"icon": "crashplan",
+	"label": "CrashPlan",
+	"description": "Backup your system to the cloud or friends PC",
+	"license": "proprietary",
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root "
+		},
+		"status": { "command": "test -f /usr/local/bin/CrashPlanDesktop" }
+	}
+}
