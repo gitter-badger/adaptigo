@@ -14,7 +14,7 @@ if [[ ! -f "$FILE" ]]; then
 	exit 1
 fi
 
-
+dpkg --add-architecture i386
 dpkg -i install $FILE
 apt-get --yes --fix-broken install
 
