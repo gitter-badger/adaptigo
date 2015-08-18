@@ -1,6 +1,6 @@
 {
 	"icon": "google-chrome",
-	"label": "Google Chrome:i386",
+	"label": "Google Chrome:amd64",
 	"description": "A fast, simple and secure web browser, built for the modern web.",
 	"license": "Freeware",
 	"category": "Apps",
