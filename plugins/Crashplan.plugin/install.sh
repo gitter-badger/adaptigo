@@ -18,7 +18,7 @@ fi
 
 dir=`mktemp -d` && cd $dir
 tar xvf "$CACHEDIR/$FILE"
-x-terminal-emulator -e $dir/CrashPlan-install/install.sh
+xterm -e $dir/CrashPlan-install/install.sh
 
 xdg-icon-resource install --novendor --size 128 "/usr/local/crashplan/skin/icon_app_128x128.png" "CrashPlan"
 gtk-update-icon-cache -f -t /usr/share/icons/hicolor
