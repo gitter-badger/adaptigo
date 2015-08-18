@@ -1,19 +1,5 @@
 #!/bin/bash
-
-CACHEDIR="/var/cache/fedy/skype"
-
-mkdir -p "$CACHEDIR"
-cd "$CACHEDIR"
-
-URL="https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb
-"
-FILE="google-chrome-stable_current_i386"
-
-wget -c "$URL" -O "$FILE"
-
-if [[ ! -f "$FILE" ]]; then
-	exit 1
-fi
-
-dpkg -i install $FILE
-apt-get --yes --fix-broken install
+aptitude insatll -y apt-transport-https
+echo 'deb https://dl.google.com/linux/chrome/deb/ stable main' > /etc/apt/sources.list.d/google-chrome.list
+wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+aptitude insatll -y google-chrome-stable
