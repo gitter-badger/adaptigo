@@ -3,7 +3,7 @@
 CACHEDIR="/var/cache/debi/CrashPlan/"
 mkdir -p "$CACHEDIR"
 cd "$CACHEDIR"
-echo "to install run ./install in the Terminal" > guide.txt
+echo "to install cd in to CrashPlan-install run ./install in the Terminal" > guide.txt
 URL="https://download.code42.com/installs/linux/install/CrashPlan/CrashPlan_4.3.0_Linux.tgz"
 FILE="CrashPlan_4.3.0_Linux.tgz"
 
