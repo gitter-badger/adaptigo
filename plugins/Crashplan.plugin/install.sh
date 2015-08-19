@@ -16,8 +16,8 @@ if [[ ! -f "$FILE" ]]; then
 	exit 1
 fi
 
-dir=`mktemp -d` && cd $dir
-tar xvf "$CACHEDIR/$FILE"
+#dir=`mktemp -d` && cd $dir
+tar xvf "$FILE"
 export DISPLAY=":0.0" 
 xterm -e $dir/CrashPlan-install/install.sh
 
