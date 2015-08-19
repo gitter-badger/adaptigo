@@ -1,0 +1,18 @@
+{
+	"icon": "mumble",
+	"label": "Mumble Client",
+	"description": "Mumble provides low-latency, high-quality voice communication for gamers.",
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "rpm --quiet --query mumble" },
+		"show": { "command": "test $(uname -m) = x86_64"}
+	}
+}

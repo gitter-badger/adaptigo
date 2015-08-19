@@ -1,0 +1,17 @@
+{
+	"label": "Better font rendering",
+	"description": "Improve the font rendering for better readability.",
+	"license": [ "FTL", "GPLv2", "BSD", "MIT", "Apache 2.0" ],
+	"category": "Tweaks",
+	"scripts": {
+		"exec": {
+			"label": "Setup",
+			"command": "sh setup.sh"
+		},
+		"undo": {
+			"label": "Revert",
+			"command": "sh revert.sh"
+		},
+		"status": { "command": "rpm --quiet --query ozon-font-config" }
+	}
+}

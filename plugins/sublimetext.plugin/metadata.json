@@ -1,0 +1,18 @@
+{
+	"icon": "sublime-text",
+	"label": "Sublime Text 3",
+	"description": "Sophisticated text editor for code, markup and prose (beta).",
+	"license": "Proprietary",
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "test -f /opt/sublime_text_3/sublime_text" }
+	}
+}

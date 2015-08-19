@@ -1,7 +1,7 @@
 {
-	"icon": "utilities-terminal",
-	"label": "Fancy Bash prompt",
-	"description": "Add colors to bash prompt to make it stand out.",
+	"icon": "system",
+	"label": "Activate non-free contrib repo",
+	"description": "add the non-free and contrib repo",
 	"category": "Tweaks",
 	"scripts": {
 		"exec": {
