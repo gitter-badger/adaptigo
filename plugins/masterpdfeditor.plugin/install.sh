@@ -1,7 +1,7 @@
 
 #!/bin/bash
 aptitude install -y curl
-if $(uname -a | grep 'x86_64'); then
+if (uname -a | grep 'x86_64');
  
   # 64-bit stuff here
   curl http://get.code-industry.net/public/master-pdf-editor-3.3.10_amd64.deb -o master-pdf-editor.deb
