@@ -11,7 +11,7 @@
 		},
 		"undo": {
 			"label": "Remove",
-			"command": "run-as-root dnf -y --setopt clean_requirements_on_remove=1 erase teamviewer"
+			"command": "run-as-root aptitude -y purge teamviewer"
 		},
 		"status": { "command": "dpkg-query -l teamviewer" }
 	}
