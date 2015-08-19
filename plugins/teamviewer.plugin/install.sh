@@ -5,8 +5,8 @@ CACHEDIR="/var/cache/fedy/teamviewer"
 mkdir -p "$CACHEDIR"
 cd "$CACHEDIR"
 
-URL="http://download.teamviewer.com/download/"
-FILE="teamviewer_i386.deb"
+curl http://download.teamviewer.com/download/teamviewer_i386.deb -o teamviewer.deb
+
 
 wget -c "$URL" -O "$FILE"
 
@@ -15,5 +15,5 @@ if [[ ! -f "$FILE" ]]; then
 fi
 
 dpkg --add-architecture i386
-dpkg -i install $FILE
+dpkg -i install teamviewer.deb
 apt-get --yes --fix-broken install
