@@ -11,7 +11,7 @@
 		},
 		"undo": {
 			"label": "Remove",
-			"command": "run-as-root aptitude -y purge  ttf-mscorefonts-installer"
+			"command": "run-as-root aptitude -y remove  ttf-mscorefonts-installer"
 		},
 		"status": { "command": "dpkg-query  -l ttf-mscorefonts-installer" }
 	}
