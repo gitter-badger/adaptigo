@@ -1,22 +1,18 @@
 #!/bin/bash
+#!/bin/bash
+aptitude install -y curl
+if (uname -a | grep 'x86_64'); then
+ 
+  # 64-bit stuff here
+wget http://download.teamviewer.com/download/teamviewer_amd64.deb
+dpkg -i teamviewer_amd64.deb
 
-CACHEDIR="/var/cache/fedy/teamviewer"
 
-if [[ ! -f "$FILE" ]]; then
-	exit 1
+else
+   # 32-bit stuff here
+wget http://download.teamviewer.com/download/teamviewer_i386.deb
+dpkg -i teamviewer_i386.deb
 fi
-
 
 apt-get --yes --fix-broken install
-if [[uname -a | grep 'x86_64']];then
- 
-  	wget http://download.teamviewer.com/download/teamviewer_i386.deb
-	dpkg -i install teamviewer_i386.deb
-	else
-
-  wget http://download.teamviewer.com/download/teamviewer_amd64.deb
-  dpkg -i install teamviewer_amd64.deb
-
-fi
-
 
