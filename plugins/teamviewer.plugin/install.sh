@@ -8,7 +8,7 @@ fi
 
 
 apt-get --yes --fix-broken install
-if $(uname -a | grep 'x86_64')
+if $((uname -a | grep 'x86_64'));
 	then
  
   	wget http://download.teamviewer.com/download/teamviewer_i386.deb
