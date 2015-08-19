@@ -6,7 +6,7 @@
 	"category": "Apps",
 	"scripts": {
 		"exec": {
-			"label": "Install",
+			"label": "Install X86_64",
 			"command": "run-as-root -s install.sh"
 		},
 		"undo": {
