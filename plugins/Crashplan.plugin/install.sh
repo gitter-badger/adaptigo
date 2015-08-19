@@ -1,8 +1,5 @@
 #!/bin/bash
 
-CACHEDIR="/var/cache/debi/CrashPlan/"
-mkdir -p "$CACHEDIR"
-cd "$CACHEDIR"
 echo "to install cd in to CrashPlan-install run ./install in the Terminal" > guide.txt
 URL="https://download.code42.com/installs/linux/install/CrashPlan/CrashPlan_4.3.0_Linux.tgz"
 FILE="CrashPlan_4.3.0_Linux.tgz"
@@ -17,7 +14,7 @@ fi
 tar xvf "$FILE"
 export DISPLAY=":0.0" 
 
-xterm -e gedit "$CACHEDIR"guide.txt
+xterm -e gedit guide.txt
 xterm -e bash
 
 

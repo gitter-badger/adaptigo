@@ -7,11 +7,11 @@
 	"scripts": {
 		"exec": {
 			"label": "Install",
-			"command": "run-as-user -s install.sh"
+			"command": "bash install.sh"
 		},
 		"undo": {
 			"label": "Remove",
-			"command": "run-as-root "
+			"command": "run-as-root rm -Rfv /usr/share/applications/CrashPlan.desktop /var/lib/crashplan"
 		},
 		"status": { "command": "test -f /usr/local/bin/CrashPlanDesktop" }
 	}
