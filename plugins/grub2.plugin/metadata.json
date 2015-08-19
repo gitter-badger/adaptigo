@@ -1,14 +1,17 @@
 {
-	"label": "GRUB2 configuration",
-	"description": "Run the GRUB2 configuration scripts and update the configuration file.",
+	"icon": "utilities-terminal",
+	"label": "update grub",
+	"description": "update grub to find new kernels and other OS",
 	"category": "Tweaks",
 	"scripts": {
 		"exec": {
-			"label": "Configure",
-			"command": "run-as-root -s setup.sh"
+			"label": "Install",
+			"command": "run-as-root aptitude -y install cabextract lzip p7zip p7zip-rar unrar"
 		},
-		"exec": {
-			"label": "update grub",
-			"command": "run-as-root update-grub2"
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root aptitude remove -y cabextract lzip p7zip p7zip-rar unrar"
 		},
+		"status": { "command": "dpkg-query  -l cabextract lzip p7zip p7zip-rar unrar" }
+	}
 }

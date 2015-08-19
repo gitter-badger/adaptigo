@@ -7,12 +7,12 @@
 	"scripts": {
 		"exec": {
 			"label": "Install",
-			"command": "run-as-root -s install.sh"
+			"command": "run-as-root aptitude -y install handbrake-cli handbrake"
 		},
 		"undo": {
 			"label": "Remove",
-			"command": "run-as-root -s uninstall.sh"
+			"command": "run-as-root aptitude -y purge handbrake-cli handbrake"
 		},
-		"status": { "command": "rpm --quiet --query HandBrake-gui HandBrake-cli" }
+		"status": { "command": "dpkg-query -l  handbrake-cli handbrake" }
 	}
 }
