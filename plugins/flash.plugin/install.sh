@@ -1,5 +1,7 @@
 #!/bin/bash
 
-dnf -y install http://linuxdownload.adobe.com/adobe-release/adobe-release-$(uname -i)-1.0-1.noarch.rpm
-rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
-dnf -y install flash-plugin
+if [ ! -f /etc/apt/sources.list.original ]; then
+cp /etc/apt/sources.list /etc/apt/sources.list.original
+sed -i 's/main/main non-free contrib/g' /etc/apt/sources.list
+fi
+aptitude install -y flashplugin-nonfree
