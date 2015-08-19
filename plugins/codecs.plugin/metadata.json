@@ -11,8 +11,8 @@
 		},
 		"undo": {
 			"label": "Remove",
-			"command": "run-as-root dnf -y --setopt clean_requirements_on_remove=1 erase ozon-multimedia-codecs"
+			"command": "run-as-root aptitude purge libavcodec-extra libdvdcss2"
 		},
-		"status": { "command": "rpm --quiet --query ozon-multimedia-codecs" }
+		"status": { "command": "dpkg-query  -l libavcodec-extra libdvdcss2" }
 	}
 }
