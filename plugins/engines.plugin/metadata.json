@@ -7,12 +7,14 @@
 	"scripts": {
 		"exec": {
 			"label": "Install",
-			"command": "run-as-root dnf -y install gtk-murrine-engine gtk-unico-engine"
+			"command": "run-as-root aptitude -y install gtk2-engines-ubuntulooks gtk2-engines-oxygen gtk2-engines-nodoka gtk2-engines-moblin gtk2-engines-magicchicken  gtk2-engines-cleanice gtk2-engines-aurora  "
 		},
 		"undo": {
 			"label": "Remove",
-			"command": "run-as-root dnf -y --setopt clean_requirements_on_remove=1 erase gtk-murrine-engine gtk-unico-engine"
+			"command": "run-as-root run-as-root aptitude -y purge gtk2-engines-ubuntulooks gtk2-engines-oxygen gtk2-engines-nodoka gtk2-engines-moblin gtk2-engines-magicchicken  gtk2-engines-cleanice gtk2-engines-aurora  "
 		},
-		"status": { "command": "rpm --quiet --query gtk-murrine-engine gtk-unico-engine" }
+		},
+		"status": { "command": "dpkg-query -l gtk2-engines-ubuntulooks gtk2-engines-oxygen gtk2-engines-nodoka gtk2-engines-moblin gtk2-engines-magicchicken  gtk2-engines-cleanice gtk2-engines-aurora  "
+		}," }
 	}
 }
