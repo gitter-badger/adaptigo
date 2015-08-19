@@ -7,7 +7,7 @@
 	"scripts": {
 		"exec": {
 			"label": "Install",
-			"command": "rejig.py && run-as-root -s install.sh"
+			"command": "run-as-root -s install.sh"
 		},
 		"undo": {
 			"label": "Remove",
