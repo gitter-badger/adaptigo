@@ -11,8 +11,8 @@
 		},
 		"undo": {
 			"label": "Remove",
-			"command": "run-as-root aptitude install -y flashplugin-non-free"
+			"command": "run-as-root aptitude purge -y flashplugin-non-free"
 		},
-		"status": { "command": "dpkg-query -l flashplugin-non-free" }
+		"status": { "command": "dpkg-query -l flashplugin-nonfree" }
 	}
 }

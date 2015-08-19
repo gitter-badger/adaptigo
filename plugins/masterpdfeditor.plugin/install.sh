@@ -1,9 +1,15 @@
 #!/bin/bash
-
-URL=$(wget "http://code-industry.net/free-pdf-editor.php" -O - | grep -o "http://.*/master-pdf-editor[0-9.\-]*.$(uname -m).rpm" | head -n 1)
-
-if [[ "$URL" != "" ]]; then
-    dnf -y install "$URL"
+MACHINE_TYPE=`uname -m`
+if [ ${MACHINE_TYPE} == 'x86_64' ]; then
+  # 64-bit stuff here
+  wget http://get.code-industry.net/public/master-pdf-editor-3.3.10_amd64.deb
+  dpkg -i master-pdf-editor-3.3.10_amd64.deb
+  apt-get --yes --fix-broken install
 else
-    exit 1
+  # 32-bit stuff here
+  http://get.code-industry.net/public/master-pdf-editor-3.3.10_i386.deb
+  dpkg -i master-pdf-editor-3.3.10_i386.deb
+  apt-get --yes --fix-broken install
+else
 fi
+
