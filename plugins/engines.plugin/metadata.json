@@ -11,10 +11,10 @@
 		},
 		"undo": {
 			"label": "Remove",
-			"command": "run-as-root run-as-root aptitude -y purge gtk2-engines-ubuntulooks gtk2-engines-oxygen gtk2-engines-nodoka gtk2-engines-moblin gtk2-engines-magicchicken  gtk2-engines-cleanice gtk2-engines-aurora  "
+			"command": "run-as-root run-as-root aptitude -y install gtk2-engines-ubuntulooks gtk2-engines-oxygen gtk2-engines-nodoka gtk2-engines-moblin gtk2-engines-magicchicken  gtk2-engines-cleanice gtk2-engines-aurora  "
 		},
 		},
-		"status": { "command": "dpkg-query -l gtk2-engines-ubuntulooks gtk2-engines-oxygen gtk2-engines-nodoka gtk2-engines-moblin gtk2-engines-magicchicken  gtk2-engines-cleanice gtk2-engines-aurora  "
+		"status": { "command": "dpkg-query -l install gtk2-engines-ubuntulooks gtk2-engines-oxygen gtk2-engines-nodoka gtk2-engines-moblin gtk2-engines-magicchicken  gtk2-engines-cleanice gtk2-engines-aurora  "
 		}," }
 	}
 }
