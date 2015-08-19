@@ -11,7 +11,7 @@
 		},
 		"undo": {
 			"label": "Remove",
-			"command": "run-as-root aptitude purge libavcodec-extra libdvdcss2"
+			"command": "run-as-root aptitude remove -y libavcodec-extra libdvdcss2"
 		},
 		"status": { "command": "dpkg-query  -l libavcodec-extra libdvdcss2" }
 	}
