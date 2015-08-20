@@ -13,6 +13,6 @@
 			"label": "Remove",
 			"command": "run-as-root -s uninstall.sh"
 		},
-		"status": { "command": "dpkg-quiet -l steam" }
+		"status": { "command": "dpkg-query -l steam" }
 	}
 }
