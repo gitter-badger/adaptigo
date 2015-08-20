@@ -5,11 +5,11 @@ echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sourc
 
 if (uname -a | grep 'x86_64'); then
  
-	wget http://ftp.acc.umu.se/mirror/cdimage/snapshot/Debian/pool/main/libg/libgcrypt11/libgcrypt11_1.5.4-3_amd64.deb
+	wget https://launchpad.net/ubuntu/+archive/primary/+files/libgcrypt11_1.5.3-2ubuntu4.2_amd64.deb
 	dpkg -i libgcrypt11_1.5.4-3_amd64.deb
 
 else
-	wget http://ftp.acc.umu.se/mirror/cdimage/snapshot/Debian/pool/main/libg/libgcrypt11/libgcrypt11_1.5.4-3_i386.deb
+	wget https://launchpad.net/ubuntu/+archive/primary/+files/libgcrypt11_1.5.3-2ubuntu4.2_i386.deb
 	dpkg -i libgcrypt11_1.5.4-3_i386.deb
 fi
 
