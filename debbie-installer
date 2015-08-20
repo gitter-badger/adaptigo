@@ -1,11 +1,30 @@
 #!/bin/bash
 
-# Script to install Fedy <http://satya164.github.io/fedy/>.
-# Copyright (C) 2014  Satyajit sahoo
-
 if [[ ! $(whoami) = "root" ]]; then
     echo "Please run the script as root."
     exit 1
 fi
 
 
+install -dm755 /usr/bin/
+install -dm755 /usr/share/debi/
+
+for f in *; do [[ $$f != "plugins" ]] && cp -pr $$f /usr/share/debi/; done
+
+install -Dpm 0755 debi.exec /usr/bin/debi
+
+install -Dpm 0644 debi.desktop /usr/share/applications/co.uk.xpd259.debi.desktop
+install -Dpm 0644 debi.appdata.xml /usr/share/appdata/debi.appdata.xml
+
+install -Dpm 0644 debi.svg /usr/share/icons/hicolor/scalable/apps/debi.svg
+install -Dpm 0644 debi-symbolic.svg /usr/share/icons/hicolor/scalable/apps/debi-symbolic.svg
+
+install -Dpm 0644 run-as-root.policy /usr/share/polkit-1/actions/org.ozonos.pkexec.run-as-root.policy
+
+@-if test -z ; then gtk-update-icon-cache -f -t /usr/share/icons/hicolor; fi
+
+
+install-plugins:
+install -dm755 /usr/share/debi/plugins
+
+cp -pr plugins/* /usr/share/debi/plugins/
