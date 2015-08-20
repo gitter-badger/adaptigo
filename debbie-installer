@@ -24,6 +24,6 @@ install -Dpm 0644 debi-symbolic.svg /usr/share/icons/hicolor/scalable/apps/debi-
 install -Dpm 0644 run-as-root.policy /usr/share/polkit-1/actions/run-as-root.policy
 
 gtk-update-icon-cache -f -t /usr/share/icons/hicolor
-
+rm -Rfv /usr/share/debi/plugins/
 install -dm755 /usr/share/debi/plugins
 cp -pr plugins/* /usr/share/debi/plugins/
