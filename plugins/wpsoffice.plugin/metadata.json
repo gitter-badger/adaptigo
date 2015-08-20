@@ -11,8 +11,8 @@
 		},
 		"undo": {
 			"label": "Remove",
-			"command": "run-as-root dnf -y --setopt clean_requirements_on_remove=1 erase wps-office"
+			"command": "run-as-root aptitude -y purge wps-office"
 		},
-		"status": { "command": "rpm --quiet --query wps-office" }
+		"status": { "command": "dpkg-query -l wps-office" }
 	}
 }
