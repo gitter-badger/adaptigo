@@ -12,14 +12,14 @@ install -dm755 /usr/share/debi/
 for f in *; do [[ $$f != "plugins" ]] && cp -pr $$f /usr/share/debi/; done
 
 install -Dpm 0755 debi.exec /usr/bin/debi
-
+install -Dpm 0755 debi /usr/share/debi
 install -Dpm 0644 debi.desktop /usr/share/applications/co.uk.xpd259.debi.desktop
 install -Dpm 0644 debi.appdata.xml /usr/share/appdata/debi.appdata.xml
 
 install -Dpm 0644 debi.svg /usr/share/icons/hicolor/scalable/apps/debi.svg
 install -Dpm 0644 debi-symbolic.svg /usr/share/icons/hicolor/scalable/apps/debi-symbolic.svg
 
-install -Dpm 0644 run-as-root.policy /usr/share/polkit-1/actions/org.ozonos.pkexec.run-as-root.policy
+install -Dpm 0644 run-as-root.policy /usr/share/polkit-1/actions/run-as-root.policy
 
 @-if test -z ; then gtk-update-icon-cache -f -t /usr/share/icons/hicolor; fi
 
