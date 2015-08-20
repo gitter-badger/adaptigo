@@ -1,4 +1,15 @@
 #!/bin/bash
+aptitude install -y curl
+if (uname -a | grep 'x86_64'); then
+ 
+  # 64-bit stuff here
+    curlhttps://vivaldi.com/download/vivaldi_TP4.1.0.219.50-1_amd64.deb -o vivaldi.deb
 
-URL=$(wget "https://vivaldi.com/download/" -O - | grep -o "https://vivaldi.com/download/Vivaldi_TP[0-9.-]*.$(uname -i).rpm" | head -n 1)
-dnf -y install "$URL"
+else
+   # 32-bit stuff here
+   curl https://vivaldi.com/download/vivaldi_TP4.1.0.219.50-1_i386.deb -o  vivaldi.deb
+
+fi
+
+dpkg -i vivaldi.deb
+apt-get --yes --fix-broken install
