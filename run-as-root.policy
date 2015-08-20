@@ -8,7 +8,7 @@
   <vendor_url>http://ozon-os.com/</vendor_url>
   <icon_name>system-run</icon_name>
 
-  <action id="org.ozonos.pkexec.run-as-root">
+  <action id="pkexec.run-as-root">
     <description>Run command as root</description>
     <message>Authentication is required to run command as root.</message>
     <defaults>
@@ -16,7 +16,7 @@
       <allow_inactive>no</allow_inactive>
       <allow_active>auth_admin_keep</allow_active>
     </defaults>
-    <annotate key="org.freedesktop.policykit.exec.path">/usr/share/fedy/bin/run-as-root</annotate>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/share/debi/bin/run-as-root</annotate>
   </action>
 
 </policyconfig>
