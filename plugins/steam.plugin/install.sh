@@ -6,7 +6,8 @@ if [ -f $FILE ];
 then
    	echo "File $FILE exists"
 	aptitude update
-	aptitude install -y flashplugin-nonfree
+	aptitude install -y steam
+fi
 else
 	cp /etc/apt/sources.list /etc/apt/sources.list.backup
 	sed -i 's|debian/ jessie main|debian/ jessie main non-free contrib|g' /etc/apt/sources.list
