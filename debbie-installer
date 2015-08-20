@@ -12,7 +12,8 @@ install -dm755 /usr/share/debi/
 for f in *; do [[ $$f != "plugins" ]] && cp -pr $$f /usr/share/debi/; done
 
 install -Dpm 0755 debi.exec /usr/bin/debi
-install -Dpm 0755 debi /usr/share/debi
+install -Dpm 0755 debi /usr/share/debi/debi
+install -Dpm 0755 app.js /usr/share/debi/app.js
 install -Dpm 0644 debi.desktop /usr/share/applications/co.uk.xpd259.debi.desktop
 install -Dpm 0644 debi.appdata.xml /usr/share/appdata/debi.appdata.xml
 
