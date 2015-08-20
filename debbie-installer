@@ -12,6 +12,9 @@ install -dm755 /usr/share/debi/
 install -Dpm 0755 debi.exec /usr/bin/debi
 install -Dpm 0755 debi /usr/share/debi/debi
 install -Dpm 0755 app.js /usr/share/debi/app.js
+install -dm755 /usr/share/debi/
+install -Dpm 0755 app.js /usr/share/debi/bin/run-as-root
+install -Dpm 0755 app.js /usr/share/debi/bin/run-as-user
 install -Dpm 0644 debi.desktop /usr/share/applications/debi.desktop
 install -Dpm 0644 debi.appdata.xml /usr/share/appdata/debi.appdata.xml
 
