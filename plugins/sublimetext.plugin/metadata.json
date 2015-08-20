@@ -11,8 +11,8 @@
 		},
 		"undo": {
 			"label": "Remove",
-			"command": "run-as-root -s uninstall.sh"
+			"command": "run-as-root aptitude -y purge sublime-text"
 		},
-		"status": { "command": "test -f /opt/sublime_text_3/sublime_text" }
+		"status": { "command": "dpkg-query -l sublime-text" }
 	}
 }
