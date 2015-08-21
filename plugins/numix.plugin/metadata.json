@@ -13,6 +13,6 @@
 			"label": "Remove",
 			"command": "run-as-root -s uninstall.sh"
 		},
-		"status": { "command": "dpkg-query -l numix-icon-theme numix-gtk-theme numix-icon-theme-bevel" }
+		"status": { "command": "dpkg-query -l numix-icon-theme numix-icon-theme-circle numix-gtk-theme " }
 	}
 }
