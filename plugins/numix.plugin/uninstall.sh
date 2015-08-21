@@ -1,4 +1,6 @@
 #!/bin/bash
 
-dnf copr -y disable satya164/numix
-dnf -y --setopt clean_requirements_on_remove=1 erase numix-icon-theme numix-icon-theme-circle numix-gtk-theme
+
+aptitide -y purge numix-icon-theme numix-gtk-theme numix-icon-theme-bevel 
+rm /etc/apt/sources.list.d/numix.list
+aptitide update -y
