@@ -10,7 +10,7 @@ rm -rf .git .gitignore CREDITS LICENSE README.md
 cp -dr --no-preserve='ownership' * /usr/share/themes/Numix/
 
 
-git clone git@github.com:numixproject/numix-icon-theme-bevel.git
+git clone http://github.com/numixproject/numix-icon-theme-bevel.git
 cd numix-icon-theme-bevel
 install -dm 755 "$pkgdir"/usr/share/themes/numix-icon-theme-bevel
 rm -rf .git .gitignore CREDITS LICENSE README.md
