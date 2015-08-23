@@ -1,9 +1,9 @@
 #!/bin/bash
 
-xdg-icon-resource uninstall --novendor --size 256 "popcorntime"
+xdg-icon-resource uninstall --novendor --size 256 "intellij"
 
 gtk-update-icon-cache -f -t /usr/share/icons/hicolor
 
-rm -f "/usr/bin/popcorn"
-rm -f "/usr/share/applications/popcorn-time.desktop"
-rm -rf "/opt/popcorn-time"
+rm -f "/usr/bin/intellij"
+rm -f "/usr/share/applications/intellij.desktop
+rm -rf "/opt/intellij"
