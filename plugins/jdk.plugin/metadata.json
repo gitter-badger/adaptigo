@@ -3,7 +3,7 @@
 	"label": "Oracle JRE",
 	"description": "Allows to run applications written in the Java programming language.",
 	"license": [ "Sun License", "GPL" ],
-	"category": "Apps",
+	"category": "Dev Apps",
 	"scripts": {
 		"exec": {
 			"label": "Install",
@@ -13,6 +13,6 @@
 			"label": "Remove",
 			"command": "run-as-root -s uninstall.sh"
 		},
-		"status": { "command": "sh status.sh" }
+		"status": { "command": "test -f /opt/jdk/jdk1.8.0_60/bin/java " }
 	}
 }

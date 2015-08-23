@@ -23,7 +23,7 @@ ln -sf /opt/intellij/idea-IC-141.1532.4/bin/idea.sh /usr/bin/intellij
 xdg-icon-resource install --novendor --size 256 "/opt/intellij/idea-IC-141.1532.4/bin/idea.png" "intellij"
 gtk-update-icon-cache -f -t /usr/share/icons/hicolor
 
-cat <<EOF | tee /usr/share/applications/intellij.desktop
+cat <<EOF | tee /usr/share/applications/intellij.desktops
 [Desktop Entry]
 Name=intellij Idea
 Icon=intellij

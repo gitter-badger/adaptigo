@@ -1,7 +1,7 @@
 {
-	"icon": "intelliJ",
-	"label": "intelliJ",
-	"description": "The Most Intelligent Java IDE",
+	"icon": "pycharm",
+	"label": "pycharm",
+	"description": "The Most Intelligent Python IDE",
 	"license": "Apache 2 license",
 	"category": "Dev Apps",
 	"scripts": {
