@@ -18,7 +18,7 @@ fi
 mkdir -p "/opt/intellij"
 tar -xbf "$FILE" -C "/opt/intellij"
 
-ln -sf "/opt/intellij/idea-IC-141.1532.4/bin/idea.sh" "/usr/bin/intellij"
+ln -sf /opt/intellij/idea-IC-141.1532.4/bin/idea.sh /usr/bin/intellij
 
 xdg-icon-resource install --novendor --size 256 "/opt/intellij/idea-IC-141.1532.4/bin/idea.png" "intellij"
 gtk-update-icon-cache -f -t /usr/share/icons/hicolor
@@ -32,6 +32,6 @@ Exec=intellij
 Terminal=false
 Type=Application
 StartupNotify=true
-Categories=Deveopment,Java
-Keywords=Java,Scala,Groovy,Deve
+Categories=Deveopment;Java
+Keywords=Java;Scala;Groovy;Deveopment
 EOF
