@@ -16,11 +16,11 @@ if [[ ! -f "$FILE" ]]; then
 fi
 
 mkdir -p "/opt/pycharm"
-tar -xbf "$FILE" -C "/opt/pycharm"
+tar -xvf "$FILE" -C "/opt/pycharm"
 
-ln -sf /opt//pycharm-community-4.5.3/bin/pycharm.sh /usr/bin/pycharm
+ln -sf /opt/pycharm/pycharm-community-4.5.3/bin/pycharm.sh /usr/bin/pycharm
 
-xdg-icon-resource install --novendor --size 256 "/opt//pycharm-community-4.5.3/bin/pycharm.png" "pycharm"
+xdg-icon-resource install --novendor --size 256 "/opt/pycharm/pycharm-community-4.5.3/bin/pycharm.png" "pycharm"
 gtk-update-icon-cache -f -t /usr/share/icons/hicolor
 
 cat <<EOF | tee /usr/share/applications/pycharm.desktops

@@ -1,6 +1,6 @@
 {
 	"icon": "java",
-	"label": "Oracle JRE",
+	"label": "Oracle JDK",
 	"description": "Allows to run applications written in the Java programming language.",
 	"license": [ "Sun License", "GPL" ],
 	"category": "Dev Apps",

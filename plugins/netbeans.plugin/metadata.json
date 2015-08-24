@@ -1,7 +1,7 @@
 {
 	"icon": "NetBeans",
 	"label": "netbeans",
-	"description": "Netbeans IDE 8.0.2",
+	"description": "Netbeans IDE 8.0.2 (install a JDK 1st)",
 	"license": "CCDL",
 	"category": "Dev Apps",
 	"scripts": {
