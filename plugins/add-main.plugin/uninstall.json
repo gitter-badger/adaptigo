@@ -1,0 +1,18 @@
+{
+	"icon": "flash",
+	"label": "Add non-free repos",
+	"description": "Add the non-free and contrib repositories ",
+	"license": "various",
+	"category": "Repositories",
+	"scripts": {
+		"exec": {
+			"label": "update",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Sorry no undo",
+			"command": "add-repos"
+		},
+		"status": { "command": "test -f /etc/apt/sources.touched" }
+	}
+}

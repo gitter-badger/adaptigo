@@ -1,9 +1,4 @@
 #!/bin/bash
-if [[ $(whoami) == "root" ]]; then
-		exec "$@"
-	else
-		exec pkexec "$0" "$@"
-fi
 aptitude install -y  software-properties-common
 cp /etc/apt/sources.list /etc/apt/sources.list.backup
 touch /etc/apt/sources.touched
