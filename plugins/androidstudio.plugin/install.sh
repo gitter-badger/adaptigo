@@ -1,7 +1,14 @@
 #!/bin/bash
-dpkg --add-architecture i386
-aptitude update
-apt-get install libstdc++6:i386 libgcc1:i386 zlib1g:i386 libncurses5:i386
+if (uname -a | grep 'x86_64'); then
+		dpkg --add-architecture i386
+		aptitude update
+		apt-get install libstdc++6:i386 libgcc1:i386 zlib1g:i386 libncurses5:i386
+	else
+		echo "i386"
+		aptitude update
+		apt-get install libstdc++6 libgcc1 zlib1g libncurses5
+fi
+
 CACHEDIR="/var/cache/debi/android";
 
 mkdir -p "$CACHEDIR"

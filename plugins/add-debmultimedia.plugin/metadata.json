@@ -10,9 +10,9 @@
 			"command": "run-as-root -s install.sh"
 		},
 		"undo": {
-			"label": "Sorry no undo",
-			"command": "add-repos"
+			"label": "Sorry no undo at moment",
+			"command": ""
 		},
-		"status": { "command": "test -f /etc/apt/sources.touched" }
+		"status": { "command": "test -f /etc/debi/sources.debmulti" }
 	}
 }

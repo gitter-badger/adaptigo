@@ -14,7 +14,12 @@ if [[ ! -f "$FILE" ]]; then
 	exit 1
 fi
 
-dpkg --add-architecture i386
+if (uname -a | grep 'x86_64'); then
+		dpkg --add-architecture i386
+	else
+		echo "i386"
+fi
+
 dpkg -i install $FILE
 apt-get --yes --fix-broken install
 

@@ -10,8 +10,8 @@
 			"command": "run-as-root -s install.sh"
 		},
 		"undo": {
-			"label": "Remove",
-			"command": "run-as-root -s uninstall.sh"
+			"label": "Sorry, no remove at the moment",
+			
 		},
 		"status": { "command": "test -f /usr/bin/netbeans" }
 	}

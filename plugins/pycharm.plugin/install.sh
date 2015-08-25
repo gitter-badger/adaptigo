@@ -23,12 +23,12 @@ ln -sf /opt/pycharm/pycharm-community-4.5.3/bin/pycharm.sh /usr/bin/pycharm
 xdg-icon-resource install --novendor --size 256 "/opt/pycharm/pycharm-community-4.5.3/bin/pycharm.png" "pycharm"
 gtk-update-icon-cache -f -t /usr/share/icons/hicolor
 
-cat <<EOF | tee /usr/share/applications/pycharm.desktops
+cat <<EOF | tee /usr/share/applications/pycharm.desktop
 [Desktop Entry]
 Name=pycharm Idea
 Icon=pycharm
 Comment=The Most Intelligent python IDE
-Exec=pycharm
+Exec=/usr/bin/pycharm
 Terminal=false
 Type=Application
 StartupNotify=true

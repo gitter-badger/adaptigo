@@ -6,9 +6,9 @@ cd "$CACHEDIR"
 
 if (uname -a | grep 'x86_64'); then
 
-wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie"  http://download.oracle.com/otn-pub/java/jdk/8u60-b27/jdk-8u60-linux-x64.tar.gz
-mkdir -p /opt/jdk
-tar xvf jdk-8u60-linux-x64.tar.gz -C /opt/jdk/
+	wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie"  http://download.oracle.com/otn-pub/java/jdk/8u60-b27/jdk-8u60-linux-x64.tar.gz
+	mkdir -p /opt/jdk
+	tar xvf jdk-8u60-linux-x64.tar.gz -C /opt/jdk/
 
 else
     wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie"  http://download.oracle.com/otn-pub/java/jdk/8u60-b27/jdk-8u60-linux-i586.tar.gz
