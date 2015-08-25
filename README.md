@@ -10,5 +10,4 @@ insipred and forked from the fedy installer for fedora
 
 
 
-forked from https://github.com/folkswithhats/fedy 
-original source can be found at https://github.com/folkswithhats/fedy
+forked from fedy original source can be found at https://github.com/folkswithhats/fedy
