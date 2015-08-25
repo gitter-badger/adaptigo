@@ -1,5 +1,4 @@
 # Debbie
-as in Debbie from Debian
 
 ## not finished yet, Don't use !!! you have been warned
 it may eat your dinner, kittens or worse!
