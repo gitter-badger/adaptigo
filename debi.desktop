@@ -1,9 +1,9 @@
 #!/usr/bin/env xdg-open
 
 [Desktop Entry]
-Name=Debi
-GenericName=Debi
-Icon=fedy
+Name=Debbi
+GenericName=Debbi
+Icon=debbi
 Comment=Software, Codec Installs & System Tweaks
 Exec=debi
 Terminal=false
