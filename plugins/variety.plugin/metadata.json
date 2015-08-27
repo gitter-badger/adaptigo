@@ -1,0 +1,18 @@
+{
+	"icon": "Variety",
+	"label": "Variety",
+	"description": "Variety is an open-source wallpaper changer for Linux",
+	"license": "GPL3",
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root aptitude -y purge variety"
+		},
+		"status": { "command": "dpkg-query -l variety" }
+	}
+}

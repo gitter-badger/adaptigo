@@ -1,0 +1,18 @@
+{
+	"icon": "linuxtrack",
+	"label": "Linux Track",
+	"description": "Head tracking for Linux",
+	"license": "GPLv3",
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "test -f /opt/linuxtrack/share/pixmaps/linuxtrack.svg" }
+	}
+}

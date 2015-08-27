@@ -54,26 +54,5 @@ wget $wgetboredom $wgetprogress --no-check-certificate --content-disposition "$u
 
 tar xf debbie-0.1-alpha.tar.gz
 cd debbie-0.1-alpha
-install -dm755 /usr/bin/
-install -dm755 /opt/debbie//
-
-install -Dpm 0755 debi.exec /usr/bin/debi
-install -Dpm 0755 debi /opt/debbie/debi
-install -Dpm 0755 app.js /opt/debbie/app.js
-install -dm755 /opt/debbie//
-install -Dpm 0755 bin/run-as-root /opt/debbie/bin/run-as-root
-install -Dpm 0755 bin/run-as-user /opt/debbie/bin/run-as-user
-install -Dpm 0644 debi.desktop /usr/share/applications/debi.desktop
-install -Dpm 0644 debi.appdata.xml /usr/share/appdata/debi.appdata.xml
-
-install -Dpm 0644 debi.svg /usr/share/icons/hicolor/scalable/apps/debi.svg
-install -Dpm 0644 debi-symbolic.svg /usr/share/icons/hicolor/scalable/apps/debi-symbolic.svg
-
-install -Dpm 0644 run-as-root.policy /usr/share/polkit-1/actions/run-as-root.policy
-
-gtk-update-icon-cache -f -t /usr/share/icons/hicolor
-rm -Rfv /opt/debbie/plugins/
-install -dm755 /opt/debbie/plugins
-cp -pr plugins/* /opt/debbie/plugins/
-
+./debbie-installer
 rm debbie-0.1-alpha.tar.gz
