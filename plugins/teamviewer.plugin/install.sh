@@ -1,5 +1,5 @@
 #!/bin/bash
-#!/bin/bash
+
 aptitude install -y curl
 if (uname -a | grep 'x86_64'); then
  
