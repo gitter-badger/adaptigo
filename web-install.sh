@@ -56,4 +56,4 @@ tar xf debbie-0.2-alpha.tar.gz
 cd debbie-0.2-alpha
 ./debbie-installer
 cd ..
-rm debbie-0.1-alpha.tar.gz
+rm debbie-0.2-alpha.tar.gz
