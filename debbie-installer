@@ -9,10 +9,10 @@ fi
 install -dm755 /usr/bin/
 install -dm755 /opt/debbie//
 
-install -Dpm 0755 debi.exec /usr/bin/debi
-install -Dpm 0755 debi /opt/debbie/debi
+install -Dpm 0755 debbie.exec /usr/bin/debbie
+install -Dpm 0755 debbie /opt/debbie/debbie
 install -Dpm 0755 app.js /opt/debbie/app.js
-install -dm755 /opt/debbie//
+install -dm755 /opt/debbie/
 install -Dpm 0755 bin/run-as-root /opt/debbie/bin/run-as-root
 install -Dpm 0755 bin/run-as-user /opt/debbie/bin/run-as-user
 install -Dpm 0644 debi.desktop /usr/share/applications/debi.desktop
