@@ -50,7 +50,7 @@ options or .wgetrc or .netrc" ;;
 }
 
 wget $wgetboredom $wgetprogress --no-check-certificate --content-disposition "$url" 
-[ "$wgetstat" != 0 ] && { print_wget_status $wgetstat; exit 1; }
+[ "$wgetstat" != 0 ] && { print_wget_status $wgetstat; }
 
 tar xf debbie-0.2-alpha.tar.gz
 cd debbie-0.2-alpha

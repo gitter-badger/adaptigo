@@ -15,11 +15,11 @@ install -Dpm 0755 app.js /opt/debbie/app.js
 install -dm755 /opt/debbie/
 install -Dpm 0755 bin/run-as-root /opt/debbie/bin/run-as-root
 install -Dpm 0755 bin/run-as-user /opt/debbie/bin/run-as-user
-install -Dpm 0644 debi.desktop /usr/share/applications/debi.desktop
-install -Dpm 0644 debi.appdata.xml /usr/share/appdata/debi.appdata.xml
+install -Dpm 0644 debbie.desktop /usr/share/applications/debbie.desktop
+install -Dpm 0644 debbie.appdata.xml /usr/share/appdata/debbie.appdata.xml
 
-install -Dpm 0644 debi.svg /usr/share/icons/hicolor/scalable/apps/debi.svg
-install -Dpm 0644 debi-symbolic.svg /usr/share/icons/hicolor/scalable/apps/debi-symbolic.svg
+install -Dpm 0644 debbie.svg /usr/share/icons/hicolor/scalable/apps/debbie.svg
+install -Dpm 0644 debbie-symbolic.svg /usr/share/icons/hicolor/scalable/apps/debbie-symbolic.svg
 
 install -Dpm 0644 run-as-root.policy /usr/share/polkit-1/actions/run-as-root.policy
 
