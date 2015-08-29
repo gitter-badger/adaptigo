@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=Debbie
+GenericName=Debbie
+Icon=debbi
+Comment=Software, Codec Installs & System Tweaks
+Exec=debbie
+Terminal=false
+Type=Application
+Categories=System;Utility;X-Debian;
+Keywords=clean;codec;debian;fix;install;proprietary;
+Name[en_GB]=debbie
