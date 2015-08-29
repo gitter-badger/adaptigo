@@ -22,7 +22,7 @@ if [[ ! $(whoami) = "root" ]]; then
 fi
 
 dir=`mktemp -d` && cd $dir
-url="https://github.com/xpd259/debbie/archive/v0.3-alpha.tar.gz"
+url="https://github.com/xpd259/adaptigo/archive/v0.3-alpha.tar.gz"
 wgetboredom='--dns-timeout=30 --connect-timeout=30 --read-timeout=120 --tries=4'
 wgetprogress='--progress=bar:force --show-progress'
 
@@ -52,7 +52,7 @@ options or .wgetrc or .netrc" ;;
 wget $wgetboredom $wgetprogress --no-check-certificate --content-disposition "$url" 
 [ "$wgetstat" != 0 ] && { print_wget_status $wgetstat; }
 
-tar xf debbie-0.3-alpha.tar.gz
-cd debbie-0.3-alpha
-./debbie-installer
-rm debbie-0.3-alpha.tar.gz
+tar xf adaptigo-0.3-alpha.tar.gz
+cd adaptigo-0.3-alpha
+./adaptigo-installer
+rm adaptigo-0.3-alpha.tar.gz
