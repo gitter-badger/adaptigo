@@ -31,8 +31,8 @@ done
 touch /etc/debi/sources.touched
 
 aptitude update
-aptitude unstall gdebi-gtk
+aptitude install -y gdebi-gtk
 apt-get download steam
-gdebi-gtk /var/cache/apt/archives/steam*
+gdebi-gtk /var/cache/apt/archives/steam_1.*
 
 
