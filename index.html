@@ -3,52 +3,128 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
     <title>Debbie by xpd259</title>
   </head>
 
   <body>
-
     <header>
-      <div class="container">
+      <div class="inner">
         <h1>Debbie</h1>
-        <h2>debi is a installer for the things that debian doesn&#39;t have installed, insipred by and forked from the fedy installer for fedora</h2>
-
-        <section id="downloads">
-  
-          <a href="https://github.com/xpd259/debbie" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
+        <h2>debi is a installer for the things that debian doesn&#39;t have installed, insipred by the fedy installer for fedora</h2>
+        <a href="https://github.com/xpd259/debbie" class="button"><small>View project on</small> GitHub</a>
       </div>
     </header>
 
-    <div class="container">
-      <section id="main_content">
-        <h1>
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
 <a id="debbie" class="anchor" href="#debbie" aria-hidden="true"><span class="octicon octicon-link"></span></a>Debbie</h1>
 
-<p>the helpful post-install installer</p>
-
-<hr>
-
 <h2>
-<a id="not-finished-yet-dont-use--you-have-been-warned" class="anchor" href="#not-finished-yet-dont-use--you-have-been-warned" aria-hidden="true"><span class="octicon octicon-link"></span></a>not finished yet, Don't use !!! you have been warned</h2>
+<a id="alpha" class="anchor" href="#alpha" aria-hidden="true"><span class="octicon octicon-link"></span></a>Alpha</h2>
 
-<p>it may eat your dinner, kittens or worse!</p>
+<h3>
+<a id="still-may-eat-your-dinner-kittens-system-or-worse" class="anchor" href="#still-may-eat-your-dinner-kittens-system-or-worse" aria-hidden="true"><span class="octicon octicon-link"></span></a>Still may eat your dinner, kittens, system or worse</h3>
 
-<p>debi is a installer for the things that Debian gnu/Linux doesn't have installed, 
-inspired and forked from the fedy installer for fedora</p>
+<p>please! have backups of /etc/ and your /home</p>
 
-<p><img src="https://raw.githubusercontent.com/xpd259/debbie/master/screenshots/Screenshot%20from%202015-08-25%2014%3A21%3A21.png" alt="alt text" title="screen Shot 1"></p>
+<p>debbie is a instasller for the things that debian doesn't have installed, 
+insipred and forked from the fedy installer for fedora</p>
+
+<h3>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h3>
+
+<p>Debbie lets you install multimedia codecs and additional software that Debia doesn't want to ship or have instaled by default, like mp3 support, Adobe Flash, Oracle Java etc., and much more with just a few clicks.</p>
+
+<h3>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h3>
+
+<p>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along with this program. If not, see gnu.org/licenses.</p>
+
+<p>Copyright (C) Dick William Thomas</p>
+
+<h3>
+<a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dependencies</h3>
+
+<p>Fedy relies on GTK+3 and GJS for it's UI layer.</p>
+
+<p>The included plugins rely on the following packages,</p>
+
+<pre><code>curl
+wget
+debian main non-free contrib repos
+aptitude
+apt-get
+gdebi
+</code></pre>
+
+<h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h3>
+
+<p>Debbie can be installed with our script which automatically sets up the Some repos and dependencies.
+Usage</p>
+
+<p>After installation, search for Debbie in the menu/overview or type fedy in the terminal.</p>
+
+<h3>
+<a id="plugin-structure" class="anchor" href="#plugin-structure" aria-hidden="true"><span class="octicon octicon-link"></span></a>Plugin structure</h3>
+
+<p>Plugins can be placed under ~/.local/share/debbie/plugins/, or the system plugins directory.</p>
+
+<p>Each plugin is a directory with the suffix .plugin, which consist of a JSON formatted metadata file. The metadata file contains information about the plugin and describes how Fedy should run the tasks.</p>
+
+<p>The plugins can run any command or scripts (bash, python etc.). In addtion to the system commands, Fedy provides an additional command, run-as-root to allow running commands (e.g.- run-as-root touch /some/file/somewhere) or scripts (e.g.- run-as-root -s do-stuff.sh) as root.</p>
+
+<p>Have a look at the existing plugins to know more about how to write plugins for Fedy.
+Source code</p>
+
+<p>You can get the latest source code from the github page.</p>
+
+<p>git clone <a href="mailto:git@github.com">git@github.com</a>:xpd259/debbie.git</p>
+
+<h3>
+<a id="bugs-and-feature-requests" class="anchor" href="#bugs-and-feature-requests" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bugs and feature requests</h3>
+
+<p>Please submit bugs and feature requests here. Pull requests are always welcome.</p>
+
+<p><img src="https://raw.githubusercontent.com/xpd259/debbie/master/screenshots/Screenshot%20from%202015-08-25%2014%3A21%3A21.png" alt="alt text" title="Logo Title Text 1"></p>
 
 <p>forked from fedy original source can be found at <a href="https://github.com/folkswithhats/fedy">https://github.com/folkswithhats/fedy</a></p>
-      </section>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/xpd259/debbie/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/xpd259/debbie/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/xpd259/debbie"></a> is maintained by <a href="https://github.com/xpd259">xpd259</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
     </div>
 
-              <script type="text/javascript">
+            <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
