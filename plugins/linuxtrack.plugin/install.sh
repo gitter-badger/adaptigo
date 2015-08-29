@@ -20,9 +20,9 @@ if [[ ! -f "$FILE" ]]; then
 	exit 1
 fi
 
-mkdir -p "/opt/popcorn-time"
+
 unzip linuxtrack*
-tar xfj linuxtrack*
+tar xvf linuxtrack*
 ln -sf /opt/linuxtrack-0.99.12 /opt/linuxtrack
 
 
@@ -41,5 +41,9 @@ StartupNotify=true
 Categories=Games
 Keywords=Headtracking;Games
 EOF
-cp /etc/profile /etc/profile.bkup
+if [ -f /etc/profile.linuxtrack ]; then
+	exit 0
+else
+cp /etc/profile /etc/profile.linuxtrack
 echo "export PATH=${PATH}:/opt/linuxtrack/bin" >> /etc/profile
+fi
