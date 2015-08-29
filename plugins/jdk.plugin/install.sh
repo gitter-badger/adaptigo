@@ -17,8 +17,8 @@ else
 fi
 
 
-update-alternatives --install /usr/bin/java java /opt/jdk/jdk1.8.0_60//bin/java 100
-update-alternatives --install /usr/bin/javac javac /opt/jdk/jdk1.8.0_60/bin/javac 100
+update-alternatives --install /usr/bin/java java /opt/jdk/jdk1.8.0_60//bin/java 1075
+update-alternatives --install /usr/bin/javac javac /opt/jdk/jdk1.8.0_60/bin/javac 1075
 
 
 ## http://stackoverflow.com/questions/10268583/downloading-java-jdk-on-linux-via-wget-is-shown-license-page-instead

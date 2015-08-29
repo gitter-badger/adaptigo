@@ -1,5 +1,5 @@
 {
-	"icon": "satom",
+	"icon": "atom",
 	"label": "Atom",
 	"description": "A hackable text editor for the 21st Century",
 	"license": "GitHub",
@@ -11,8 +11,8 @@
 		},
 		"undo": {
 			"label": "Remove",
-			"command": "run-as-root aptitude -y purge sublime-text"
+			"command": "run-as-root aptitude -y purge atom"
 		},
-		"status": { "command": "dpkg-query -l sublime-text" }
+		"status": { "command": "dpkg-query -l atom" }
 	}
 }
