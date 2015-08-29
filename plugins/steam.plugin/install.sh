@@ -29,5 +29,8 @@ done
 touch /etc/debi/sources.touched
 
 aptitude update
+aptitude unstall gdebi-gtk
+wget http://ftp.us.debian.org/debian/pool/non-free/s/steam/steam_1.0.0.49-1_i386.deb    
+gdebi-gtk steam_1.0.0.49-1_i386.deb
 aptitude install -y steam
 
