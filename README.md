@@ -64,7 +64,7 @@ Please submit bugs and feature requests here. Pull requests are always welcome.
 
 
 
-![alt text](https://raw.githubusercontent.com/xpd259/debbie/master/screenshots/Screenshot%20from%202015-08-25%2014%3A21%3A21.png "Logo Title Text 1")
+![alt text](https://raw.githubusercontent.com/xpd259/debbie/master/screenshots/Screenshot%20from%202015-08-25%2014%3A21%3A21.png "Screen shot of Apps menu in action")
 
 
 forked from fedy original source can be found at https://github.com/folkswithhats/fedy
