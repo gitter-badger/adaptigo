@@ -3,7 +3,7 @@
 [Desktop Entry]
 Name=Debbie
 GenericName=Debbie
-Icon=debbi
+Icon=debbie
 Comment=Software, Codec Installs & System Tweaks
 Exec=debbie
 Terminal=false
