@@ -1,7 +1,7 @@
 {
-	"icon": "NetBeans",
-	"label": "netbeans",
-	"description": "Netbeans IDE 8.0.2 (install a JDK 1st)",
+	"icon": "netbeans",
+	"label": "NetBeans IDE",
+	"description": "Netbeans IDE 8.0.2 install a JDK and configure 1st",
 	"license": "CCDL",
 	"category": "Dev Apps",
 	"scripts": {
@@ -10,9 +10,7 @@
 			"command": "run-as-root -s install.sh"
 		},
 		"undo": {
-			"label": "Sorry, no remove at the moment",
-			
-		},
+			"label": "sorry no remove at moment" },
 		"status": { "command": "test -f /usr/bin/netbeans" }
 	}
 }
