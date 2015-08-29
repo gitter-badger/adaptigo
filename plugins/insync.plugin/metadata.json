@@ -1,7 +1,7 @@
 {
 	"icon": "insync",
 	"label": "Insync",
-	"description": "Insync extends Drive's web functionality to your desktop",
+	"description": "Insync extends Google Drive's web functionality to your desktop",
 	"license": "Proprietary",
 	"category": "Apps",
 	"scripts": {

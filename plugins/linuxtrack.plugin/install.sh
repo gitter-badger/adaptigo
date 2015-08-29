@@ -41,6 +41,7 @@ StartupNotify=true
 Categories=Games
 Keywords=Headtracking;Games
 EOF
+
 if [ -f /etc/profile.linuxtrack ]; then
 	exit 0
 else
