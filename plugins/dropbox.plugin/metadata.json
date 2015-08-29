@@ -7,7 +7,7 @@
 	"scripts": {
 		"exec": {
 			"label": "Install",
-			"command": "run-as-root aptitude -y install nautilus-dropbox"
+			"command": "run-as-root -s install.sh"
 		},
 		"undo": {
 			"label": "Remove",

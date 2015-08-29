@@ -1,8 +1,9 @@
 #!/bin/bash
 
 CACHEDIR="/var/cache/fedy/sublimetext"
+cd $CACHEDIR
 
-if (uname -a | grep 'x86_64'); then
+if (uname -m = 'x86_64'); then
 	ARCH="amd64"
 	mkdir -p "$CACHEDIR"
 	cd "$CACHEDIR"

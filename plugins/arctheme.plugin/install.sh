@@ -2,7 +2,7 @@
 
 wget http://download.opensuse.org/repositories/home:Horst3180/Debian_8.0/Release.key
 apt-key add - < Release.key 
-echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/Debian_8.0/ /' >> /etc/apt/sources.list.d/arc-theme.list 
+apt-add-repository "deb http://download.opensuse.org/repositories/home:/Horst3180/Debian_8.0/ /"
 apt-get update
 apt-get install -y arc-theme
 rm Release.key
