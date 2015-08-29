@@ -24,4 +24,5 @@ done
 
 mkdir -p /etc/debi/
 touch /etc/debi/sources.touched
+aptitude update
 aptitude install -y nautilus-dropbox
