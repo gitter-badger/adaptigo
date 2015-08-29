@@ -1,16 +1,21 @@
 # ADAPTIGO
 
+
+
 ## Alpha 
 ### Still may eat your dinner, kittens, system or worse
 please! have backups of /etc/ and your /home
 
 
+
 Adaptigo is a instasller for the things that debian doesn't have installed, 
+
 insipred and forked from the fedy installer for fedora
 
 ### Introduction
 
  Adaptigo lets you install multimedia codecs and additional software that Debia doesn't want to ship or have instaled by default, like mp3 support, Adobe Flash, Oracle Java etc., and much more with just a few clicks.
+
 
 ### License
 
@@ -20,11 +25,12 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 You should have received a copy of the GNU General Public License along with this program. If not, see gnu.org/licenses.
 
-Copyright (C) Dick William Thomas
+Copyright (C) Dick William Thomas   
+Copyright (C) Satyajit Sahoo (fedy)
 
 ### Dependencies
 
-Fedy relies on GTK+3 and GJS for it's UI layer.
+Adaptigo relies on GTK+3 and GJS for it's UI layer.
 
 The included plugins rely on the following packages,
 	
@@ -45,6 +51,7 @@ After installation, search for Adaptigo in the menu/overview or type fedy in the
 
 ### Plugin structure
 
+
 Plugins can be placed under ~/.local/share/Adaptigo/plugins/, or the system plugins directory.
 
 Each plugin is a directory with the suffix .plugin, which consist of a JSON formatted metadata file. The metadata file contains information about the plugin and describes how Fedy should run the tasks.
@@ -55,6 +62,7 @@ Have a look at the existing plugins to know more about how to write plugins for 
 Source code
 
 You can get the latest source code from the github page.
+
 
 git clone git@github.com:xpd259/Adaptigo.git
 
