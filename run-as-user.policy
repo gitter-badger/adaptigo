@@ -5,7 +5,7 @@
 
 <policyconfig>
   <vendor>Run as root</vendor>
-  <vendor_url>http://xpd259.co.uk</vendor_url>
+  <vendor_url>http://xpd259.github.io/adaptigo</vendor_url>
   <icon_name>system-run</icon_name>
 
   <action id="pkexec.run-as-root">
@@ -16,7 +16,7 @@
       <allow_inactive>no</allow_inactive>
       <allow_active>auth_admin_keep</allow_active>
     </defaults>
-    <annotate key="org.freedesktop.policykit.exec.path">/usr/share/debi/bin/run-as-user/annotate>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/share/adaptigo/bin/run-as-user/annotate>
   </action>
 
 </policyconfig>
