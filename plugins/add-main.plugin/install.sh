@@ -24,4 +24,4 @@ done
 
 
 mkdir -p /etc/debi/
-touch /etc/debi/sources.touched
+touch /debi/sources.debmulti
