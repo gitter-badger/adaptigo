@@ -16,7 +16,7 @@ if [[ ! -f "$FILE" ]]; then
 fi
 
 mkdir -p "/opt/intellij"
-tar -xbf "$FILE" -C "/opt/intellij"
+tar -xvf "$FILE" -C "/opt/intellij"
 
 ln -sf /opt/intellij/idea-IC-141.1532.4/bin/idea.sh /usr/bin/intellij
 

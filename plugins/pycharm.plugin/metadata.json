@@ -13,6 +13,6 @@
 			"label": "Remove",
 			"command": "run-as-root -s uninstall.sh"
 		},
-		"status": { "command": "test -f /usr/bin/intellij" }
+		"status": { "command": "test -f /opt/pycharm/pycharm-community-4.5.3/bin/pycharm.sh" }
 	}
 }
