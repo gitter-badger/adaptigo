@@ -28,7 +28,7 @@ cat <<EOF | tee /usr/share/applications/intellij.desktops
 Name=intellij Idea
 Icon=intellij
 Comment=The Most Intelligent Java IDE
-Exec=intellij
+Exec=/usr/bin/intellij
 Terminal=false
 Type=Application
 StartupNotify=true

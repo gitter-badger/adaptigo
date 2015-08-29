@@ -34,7 +34,7 @@ gtk-update-icon-cache -f -t /usr/share/icons/hicolor
 cat <<EOF | tee /usr/share/applications/androidstudio.desktop
 [Desktop Entry]
 Name=Android Studio
-Icon=android-studio
+Icon=androidstudio
 Comment=Official IDE for Android application development
 Exec=android-studio
 Terminal=false
