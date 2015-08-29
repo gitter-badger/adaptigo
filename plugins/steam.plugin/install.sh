@@ -1,4 +1,6 @@
 #!/bin/bash
+export DISPLAY=":0.0" 
+
 if [ `uname -m` = "x86_64" ]; then
 		dpkg --add-architecture i386
 	else
@@ -32,5 +34,5 @@ aptitude update
 aptitude unstall gdebi-gtk
 apt-get download steam
 gdebi-gtk /var/cache/apt/archives/steam*
-aptitude install -y steam
+
 
