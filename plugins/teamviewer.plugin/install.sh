@@ -1,7 +1,7 @@
 #!/bin/bash
 
 aptitude install -y curl
-if (uname -a | grep 'x86_64'); then
+if [ `uname -m` = "x86_64" ]; then
  
   # 64-bit stuff here
 wget http://download.teamviewer.com/download/teamviewer_amd64.deb

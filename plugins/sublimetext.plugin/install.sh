@@ -2,7 +2,7 @@
 
 CACHEDIR="/var/cache/fedy/sublimetext"
 
-if (uname -a | grep 'x86_64'); then
+if [ `uname -m` = "x86_64" ]; then
 	ARCH="amd64"
 else
 	ARCH="i386"

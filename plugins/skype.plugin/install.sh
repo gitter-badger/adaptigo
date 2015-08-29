@@ -14,7 +14,7 @@ if [[ ! -f "$FILE" ]]; then
 	exit 1
 fi
 
-if (uname -a | grep 'x86_64'); then
+if [ `uname -m` = "x86_64" ]; then
 		dpkg --add-architecture i386
 	else
 		echo "i386"

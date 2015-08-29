@@ -4,7 +4,7 @@ CACHEDIR="/var/cache/debi/jdk"
 mkdir -p "$CACHEDIR"
 cd "$CACHEDIR"
 
-if (uname -a | grep 'x86_64'); then
+if [ `uname -m` = "x86_64" ]; then
 
 	wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie"  http://download.oracle.com/otn-pub/java/jdk/8u60-b27/jdk-8u60-linux-x64.tar.gz
 	mkdir -p /opt/jdk
