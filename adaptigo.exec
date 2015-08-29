@@ -1,2 +1,2 @@
 #!/bin/bash
-/opt/adpaptigo/adpaptigo $@
+/opt/adaptigo/adaptigo $@
