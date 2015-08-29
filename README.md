@@ -1,7 +1,7 @@
 # Debbie
 
-## not finished yet, Don't use !!! you have been warned
-it may eat your dinner, kittens or worse!
+## Alpha :- Still may eat your dinner, kittens, system or worse
+please! have backups of /etc/ and your /home
 
 
 debi is a instasller for the things that debian doesn't have installed, 
