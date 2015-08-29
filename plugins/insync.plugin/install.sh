@@ -6,4 +6,4 @@ aptitude install -y  software-properties-common
 
 apt-add-repository "deb http://apt.insynchq.com/debian jessie non-free contrib"
 apt-get update
-aptitudept install -y insync 
+aptitude install -y insync 
