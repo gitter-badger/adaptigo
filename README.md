@@ -1,6 +1,7 @@
 # Debbie
 
-## Alpha :- Still may eat your dinner, kittens, system or worse
+## Alpha 
+### Still may eat your dinner, kittens, system or worse
 please! have backups of /etc/ and your /home
 
 
