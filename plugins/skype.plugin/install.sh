@@ -10,7 +10,7 @@ FILE="skype-debian.deb"
 
 wget -c "$URL" -O "$FILE"
 
-if [[ ! -f "$FILE" ]]; then
+if [ ! -f "$FILE" ]; then
 	exit 1
 fi
 
