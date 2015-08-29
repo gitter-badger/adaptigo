@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ `uname -m` = "x86_64" ]; then
+if [[ `uname -m` = "x86_64" ]]; then
 		dpkg --add-architecture i386
 	else
 		echo "i386"

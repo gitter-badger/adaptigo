@@ -2,7 +2,7 @@
 
 CACHEDIR="/var/cache/debi/linuxtrack"
 
-if [[ "$(uname -m)" = "x86_64" ]]; then
+if [[ `uname -m` = "x86_64" ]]; then
 	ARCH="64"
 else
 	ARCH="32"

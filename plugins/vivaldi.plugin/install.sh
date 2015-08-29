@@ -1,6 +1,6 @@
 #!/bin/bash
 aptitude install -y curl
-if (uname -a | grep 'x86_64'); then
+if [[ `uname -m` = "x86_64" ]]; then
  
   # 64-bit stuff here
     curlhttps://vivaldi.com/download/vivaldi_TP4.1.0.219.50-1_amd64.deb -o vivaldi.deb

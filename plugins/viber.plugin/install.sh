@@ -1,6 +1,5 @@
 #!/bin/bash
-
-if [ `uname -m` = "x86_64" ]; then
+if [[ `uname -m` = "x86_64" ]]; then
    wget http://download.cdn.viber.com/cdn/desktop/Linux/viber.deb
    dpkg -i viber.deb
    apt-get -f install
