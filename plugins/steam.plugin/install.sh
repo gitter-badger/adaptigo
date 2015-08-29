@@ -1,9 +1,5 @@
 #!/bin/bash
-<<<<<<< HEAD
-if [[ `uname -m` = "x86_64" ]]; then
-=======
 if [ `uname -m` = "x86_64" ]; then
->>>>>>> b446d78... updated x64 checking as the pervious methods were unreliable on debian
 		dpkg --add-architecture i386
 	else
 		echo "i386"

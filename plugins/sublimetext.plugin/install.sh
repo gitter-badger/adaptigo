@@ -1,12 +1,7 @@
 #!/bin/bash
 
 CACHEDIR="/var/cache/fedy/sublimetext"
-<<<<<<< HEAD
-if [[ `uname -m` = "x86_64" ]]; then
-=======
-
 if [ `uname -m` = "x86_64" ]; then
->>>>>>> b446d78... updated x64 checking as the pervious methods were unreliable on debian
 	ARCH="amd64"
 else
 	ARCH="i386"

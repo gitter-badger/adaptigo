@@ -4,11 +4,7 @@ CACHEDIR="/var/cache/debi/jdk"
 mkdir -p "$CACHEDIR"
 cd "$CACHEDIR"
 
-<<<<<<< HEAD
-if [[ `uname -m` = "x86_64" ]]; then
-=======
 if [ `uname -m` = "x86_64" ]; then
->>>>>>> b446d78... updated x64 checking as the pervious methods were unreliable on debian
 
 	wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie"  http://download.oracle.com/otn-pub/java/jdk/8u60-b27/jdk-8u60-linux-x64.tar.gz
 	mkdir -p /opt/jdk

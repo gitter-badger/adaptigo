@@ -6,7 +6,7 @@ CACHEDIR="/var/cache/debi/Telegram";
 mkdir -p "$CACHEDIR"
 cd "$CACHEDIR"
 
-if [[ `uname -m` = "x86_64" ]]; then
+if [ `uname -m` = "x86_64" ]; then
   # 64-bit stuff here
   cd /opt
   	wget https://tdesktop.com/linux -O linux.tar.gz 
