@@ -55,8 +55,5 @@ wget $wgetboredom $wgetprogress --no-check-certificate --content-disposition "$u
 tar xf adaptigo-0.3-alpha.tar.gz
 cd adaptigo-0.3-alpha
 ./adaptigo-installer
-<<<<<<< HEAD
 rm adaptigo-0.3-alpha.tar.gz
-=======
-rm adaptigo-0.3-alpha.tar.gz
->>>>>>> 8262aa3cb9d0718374dcc08b9e6841965d009575
+
