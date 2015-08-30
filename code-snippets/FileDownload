@@ -1,8 +1,0 @@
-URL=https://download.jetbrains.com/idea/ideaIC-14.1.4.tar.gz
-FILE=ideaIC.tar.gz
-
-wget -c "$URL" -O "$FILE"
-
-if [[ ! -f "$FILE" ]]; then
-	exit 1
-fi
