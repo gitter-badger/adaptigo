@@ -52,7 +52,7 @@ options or .wgetrc or .netrc" ;;
 wget $wgetboredom $wgetprogress --no-check-certificate --content-disposition "$url" 
 [ "$wgetstat" != 0 ] && { print_wget_status $wgetstat; }
 
-tar xfv adaptigo-0.2-alpha.tar.gz
+tar xfv adaptigo-0.3-alpha.tar.gz
 cd adaptigo-0.3-alpha
 ./adaptigo-installer
 cd ..
