@@ -13,6 +13,6 @@
 			"label": "Remove",
 			"command": "run-as-root -s uninstall.sh"
 		},
-		"status": { "command": "dpkg-query spotify-client" }
+		"status": { "command": "dpkg-query -l spotify-client" }
 	}
 }
