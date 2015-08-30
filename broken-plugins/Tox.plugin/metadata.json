@@ -1,0 +1,19 @@
+{
+	"icon": "tox",
+	"label": "qTox IM",
+	"description": "Tox, a distributed, secure messenger with audio and video chat capabilities",
+	"license": "Various Open",
+	"libre": true,
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "test -f /opt/android-studio/bin/studio.sh" }
+	}
+}
