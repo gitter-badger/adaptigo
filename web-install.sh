@@ -52,8 +52,33 @@ options or .wgetrc or .netrc" ;;
 wget $wgetboredom $wgetprogress --no-check-certificate --content-disposition "$url" 
 [ "$wgetstat" != 0 ] && { print_wget_status $wgetstat; }
 
-tar xf adaptigo-0.3-alpha.tar.gz
+tar xfv adaptigo-0.2-alpha.tar.gz
 cd adaptigo-0.3-alpha
 ./adaptigo-installer
-rm adaptigo-0.3-alpha.tar.gz
+cd ..
+rm adaptigo-0.3-alpha.tar.gz  
 
+aptitude install -y  software-properties-common curl wget gdebi apt-transport-https
+cp /etc/apt/sources.list /etc/apt/sources.list.backup
+
+
+grep  '^deb.*debian/ jessie.*main'  /etc/apt/sources.list | while read -r line ; do
+    echo "Processing $line"
+    apt-add-repository -s "$line  non-free contrib"
+
+done
+
+grep  '^deb.*jessie.updates.main'  /etc/apt/sources.list | while read -r line ; do
+    echo "Processing $line"
+    apt-add-repository -s "$line  non-free contrib"
+
+done
+
+
+grep  '^deb.http://.*debian/ jessie-updates.*main'  /etc/apt/sources.list | while read -r line ; do
+    echo "Processing $line"
+    apt-add-repository -s "$line  non-free contrib"
+
+done
+
+aptitude update
