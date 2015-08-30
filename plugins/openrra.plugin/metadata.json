@@ -1,0 +1,18 @@
+{
+	"icon": "openra",
+	"label": "openRA",
+	"description": "OpenRA is a Libre/Free Real Time Strategy project that recreates the classic Command & Conquer titles.",
+	"license": "GPL v3",
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root aptitude -y purge openra"
+		},
+		"status": { "command": "dpkg-query -l openra" }
+	}
+}

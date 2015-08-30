@@ -1,0 +1,18 @@
+{
+	"icon": "emby",
+	"label": "Emby Server",
+	"description": "ENERGIZE YOUR MEDIA WITH EMBY Visit http://localhost:8096 ",
+	"license": "gnu v2 ",
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root aptitude -y purge emby-server"
+		},
+		"status": { "command": "dpkg-query -l emby-server" }
+	}
+}
