@@ -1,0 +1,17 @@
+{
+	"label": "scudcloud",
+	"description": "ScudCloud is a non official open-source Linux desktop client for Slack",
+	"license": "MIT",
+	"category": "Dev Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "test -d /opt/scudcloud" }
+	}
+}
