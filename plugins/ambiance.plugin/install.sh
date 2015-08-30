@@ -10,3 +10,4 @@ if [ ! -f "$FILE" ]; then
 fi
  
 dpkg -i ambiance-colors.deb
+apt-get -f install 
