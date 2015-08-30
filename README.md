@@ -25,8 +25,6 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 You should have received a copy of the GNU General Public License along with this program. If not, see gnu.org/licenses.
 
-Copyright (C) Dick William Thomas   
-Copyright (C) Satyajit Sahoo (fedy)
 
 ### Dependencies
 
@@ -40,14 +38,13 @@ The included plugins rely on the following packages,
     aptitude
     apt-get
     gdebi
+ 	software-properties-common
+  	apt-transport-https
+  	gjs
 
 ### Installation
 
-Adaptigo can be installed with our script which automatically sets up the Some repos and dependencies.
-Usage
-
-After installation, search for Adaptigo in the menu/overview or type fedy in the terminal.
-
+    bash -c 'su -c "curl xpd259.github.io/adaptigo/web-install.sh -o adaptigo-installer && chmod +x adaptigo-installer && ./adaptigo-installer"' 
 
 ### Plugin structure
 
