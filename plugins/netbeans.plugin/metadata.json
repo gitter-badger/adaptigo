@@ -11,6 +11,6 @@
 		},
 		"undo": {
 			"label": "sorry no remove at moment" },
-		"status": { "command": "test -f /usr/bin/netbeans" }
+		"status": { "command": "test -f /usr/local/netbeans-8.0.2/bin/netbeans" }
 	}
 }
