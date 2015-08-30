@@ -1,0 +1,18 @@
+{
+	"icon": "themes",
+	"label": "Ambiance Colors",
+	"description": "Ambiance Colors theme",
+	"license": "",
+	"category": "Themes",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s remove.sh"
+		},
+		"status": { "command": "dpkg-query -l ambiance-colors" }
+	}
+}
