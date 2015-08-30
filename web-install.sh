@@ -22,7 +22,7 @@ if [[ ! $(whoami) = "root" ]]; then
 fi
 
 dir=`mktemp -d` && cd $dir
-url="https://github.com/xpd259/adaptigo/archive/v0.3-alpha.tar.gz"
+url="https://github.com/xpd259/adaptigo/archive/v0.4.tar.gz"
 wgetboredom='--dns-timeout=30 --connect-timeout=30 --read-timeout=120 --tries=4'
 wgetprogress='--progress=bar:force --show-progress'
 
@@ -52,11 +52,11 @@ options or .wgetrc or .netrc" ;;
 wget $wgetboredom $wgetprogress --no-check-certificate --content-disposition "$url" 
 [ "$wgetstat" != 0 ] && { print_wget_status $wgetstat; }
 
-tar xfv adaptigo-0.3-alpha.tar.gz
-cd adaptigo-0.3-alpha
+tar xfv adaptigo-0.4.tar.gz
+cd adaptigo-0.4
 ./adaptigo-installer
 cd ..
-rm adaptigo-0.3-alpha.tar.gz  
+rm adaptigo-0.4.tar.gz  
 
 aptitude install -y  software-properties-common curl wget gdebi apt-transport-https gjs
 cp /etc/apt/sources.list /etc/apt/sources.list.backup
