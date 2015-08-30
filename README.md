@@ -44,7 +44,7 @@ The included plugins rely on the following packages,
 
 ### Installation
 
-    bash -c 'su -c "curl xpd259.github.io/adaptigo/web-install.sh -o adaptigo-installer && chmod +x adaptigo-installer && ./adaptigo-installer"' 
+    bash -c 'su -c "wget xpd259.github.io/adaptigo/web-install.sh -O adaptigo-installer && chmod +x adaptigo-installer && ./adaptigo-installer"' 
 
 ### Plugin structure
 
