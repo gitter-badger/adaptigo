@@ -58,7 +58,7 @@ cd adaptigo-0.3-alpha
 cd ..
 rm adaptigo-0.3-alpha.tar.gz  
 
-aptitude install -y  software-properties-common curl wget gdebi apt-transport-https
+aptitude install -y  software-properties-common curl wget gdebi apt-transport-https gjs
 cp /etc/apt/sources.list /etc/apt/sources.list.backup
 
 
