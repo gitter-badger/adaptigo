@@ -58,7 +58,7 @@ cd adaptigo-0.3-alpha
 cd ..
 rm adaptigo-0.3-alpha.tar.gz  
 
-aptitude install -y  software-properties-common curl wget gdebi
+aptitude install -y  software-properties-common curl wget gdebi apt-transport-https
 cp /etc/apt/sources.list /etc/apt/sources.list.backup
 
 
@@ -80,3 +80,5 @@ grep  '^deb.http://.*debian/ jessie-updates.*main'  /etc/apt/sources.list | whil
     apt-add-repository -s "$line  non-free contrib"
 
 done
+
+aptitude update
