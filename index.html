@@ -20,16 +20,15 @@
     <header>
       <div class="inner">
         <h1>Adaptigo</h1>
-        <h2>Adaptigo is a installer for the things that debian doesn&#39;t have installed, insipred by the fedy installer for fedora</h2>
+        <h2>Adaptigo is a installer for the things that debian doesn&#39;t have installed by default, insipred and forked from the fedy installer</h2>
         <a href="https://github.com/xpd259/adaptigo" class="button"><small>View project on</small> GitHub</a>
-      </div>
+    </div> 
+         
     </header>
 
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h1>
-<a id="adaptigo" class="anchor" href="#adaptigo" aria-hidden="true"><span class="octicon octicon-link"></span></a>ADAPTIGO</h1>
 
 <h2>
 <a id="alpha" class="anchor" href="#alpha" aria-hidden="true"><span class="octicon octicon-link"></span></a>Alpha</h2>
@@ -46,16 +45,7 @@
 <h3>
 <a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h3>
 
-<p>Adaptigo lets you install multimedia codecs and additional software that Debian doesn't want to ship or have installed by default, like mp3 support, Adobe Flash, Oracle Java etc., and much more with just a few clicks.</p>
-
-<h3>
-<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h3>
-
-<p>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
-
-<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
-
-<p>You should have received a copy of the GNU General Public License along with this program. If not, see gnu.org/licenses.</p>
+<p>Adaptigo lets you install multimedia codecs and additional software that Debian doesn't want to ship or have installed by default, like Adobe Flash, Oracle Java, Skype, Google Chrome,   etc., and much more with just a few clicks.</p>
 
 
 <h3>
@@ -75,27 +65,20 @@ gdebi
 
 <h3>
 <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h3>
+=======
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a><h3>Installation</h3>
+
 
 <p>Adaptigo can be installed with our script which automatically sets up the Some repos and dependencies.
-Usage</p>
+Usage or from the github link at the top of the page</p>
 
-<p>After installation, search for Adaptigo in the menu/overview or type fedy in the terminal.</p>
 
-<h3>
-<a id="plugin-structure" class="anchor" href="#plugin-structure" aria-hidden="true"><span class="octicon octicon-link"></span></a>Plugin structure</h3>
+<h4>bash -c 'su -c "curl xpd259.github.io/adaptigo/web-install.sh -o adaptigo-installer && chmod +x adaptigo-installer && ./adaptigo-installer"'
+</h4>
 
-<p>Plugins can be placed under ~/.local/share/Adaptigo/plugins/, or the system plugins directory.</p>
+<p>After installation, search for adaptigo in the menu/overview or type adaptigo in the terminal.</p>
 
-<p>Each plugin is a directory with the suffix .plugin, which consist of a JSON formatted metadata file. The metadata file contains information about the plugin and describes how Fedy should run the tasks.</p>
 
-<p>The plugins can run any command or scripts (bash, python etc.). In addition to the system commands, Fedy provides an additional command, run-as-root to allow running commands (e.g.- run-as-root touch /some/file/somewhere) or scripts (e.g.- run-as-root -s do-stuff.sh) as root.</p>
-
-<p>Have a look at the existing plugins to know more about how to write plugins for Fedy.
-Source code</p>
-
-<p>You can get the latest source code from the github page.</p>
-
-<p>git clone <a href="mailto:git@github.com">git@github.com</a>:xpd259/Adaptigo.git</p>
 
 <h3>
 <a id="bugs-and-feature-requests" class="anchor" href="#bugs-and-feature-requests" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bugs and feature requests</h3>
@@ -103,18 +86,28 @@ Source code</p>
 <p>Please submit bugs and feature requests here. Pull requests are always welcome.</p>
 
 <p><img src="https://raw.githubusercontent.com/xpd259/Adaptigo/master/screenshots/Screenshot%20from%202015-08-25%2014%3A21%3A21.png" alt="alt text" title="Screen shot of Apps menu in action"></p>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a><h3>License</h3>
+
+<p>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
+
+
+        <aside id="sidebar">
+          <p class="repo-owner"><a href="https://github.com/xpd259/adaptigo"></a> is maintained by <a href="https://github.com/xpd259">xpd259</a>.</p>
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along with this program. If not, see gnu.org/licenses.</p>
 
 <p>forked from fedy original source can be found at <a href="https://github.com/folkswithhats/fedy">https://github.com/folkswithhats/fedy</a></p>
         </section>
 
-        <aside id="sidebar">
-          <p class="repo-owner"><a href="https://github.com/xpd259/adaptigo"></a> is maintained by <a href="https://github.com/xpd259">xpd259</a>.</p>
-
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+  
+       
         </aside>
       </div>
     </div>
-
+    <center><a href="https://github.com/xpd259/adaptigo">apaptigo</a> is maintained by <a href="https://github.com/xpd259">xpd259</a><br/>
+        <a href="http://www.gnu.org/licenses/gpl-3.0.en.html"><img src="images/gpl.png"></a>
+  </p></center>
             <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
