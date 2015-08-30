@@ -1,0 +1,18 @@
+{
+	"icon": "fonts",
+	"label": "Google Webfonts",
+	"description": "A simple way to download the Google Webfonts in to the system folder.",
+	"license": "Freeware",
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install (very slow)",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s remove.sh"
+		},
+		"status": { "command": "test -d /usr/share/fonts/truetype/google-fonts" }
+	}
+}
